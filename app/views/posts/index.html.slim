@@ -2,16 +2,17 @@
   .col-sm-12.text-center
     .page-header Simply Susan Says
 .row.body-row
-  .col-sm-4
+  .col-sm-4.portfolio
     h1.susan-header.text-center 
       | Susan Carlson
     = image_tag("curtis_and_susan.jpg", class: "home-image")
   .col-sm-8
     - @posts.each do |post|
-      h2
-        = post.title
       p
         = post.updated_at.strftime("%D")
+        span.title
+          = post.title
+      = image_tag("carlson_family_photo.jpg", class: "home-image")
       h4
         = post.body
     br
