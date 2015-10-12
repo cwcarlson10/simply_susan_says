@@ -15,10 +15,10 @@ html
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          .navbar-brand = link_to root_path
-            //= image_tag("snfs_words.png", size: "210x50")
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
+            li
+              = link_to "Home", root_path
             li
               = link_to "About Us", static_pages_about_path
             li
@@ -27,5 +27,6 @@ html
       .alert-default.notice = notice 
     = if notice
       .alert-default.alert = alert
-    = yield 
+    .container-fluid
+      = yield 
 
