@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 html
   head
-    title SpecialNeedForSpeed
+    title Simply Susan Says
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true 
     = javascript_include_tag 'application', 'data-turbolinks-track' => true 
     = csrf_meta_tags 
   body
     nav.navbar.navbar-default
-      .container-fluid
+      .container
         /! Brand and toggle get grouped for better mobile display
         .navbar-header
           button.navbar-toggle.collapsed aria-expanded="false" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button" 
@@ -18,15 +18,15 @@ html
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
           ul.nav.navbar-nav.navbar-right
             li
-              = link_to "Home", root_path
+              = link_to "Posts", posts_path
             li
-              = link_to "About Us", static_pages_about_path
+              = link_to "About Me", static_pages_about_path
             li
-              = link_to "Contact Us", static_pages_contact_path
-    = if notice
-      .alert-default.notice = notice 
-    = if notice
-      .alert-default.alert = alert
-    .container-fluid
-      = yield 
+              = link_to "Contact", static_pages_contact_path
+  = if notice
+    .alert-default.notice = notice 
+  = if notice
+    .alert-default.alert = alert
+  .container
+    = yield 
 
