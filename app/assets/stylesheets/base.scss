@@ -25,11 +25,22 @@ body {
 h4, p {
   color: #404040;
 }
-h1, .title {
-  color: #985656;
+h1 {
+  color: #E4C797;
+  font-family: 'Nothing You Could Do', cursive;
+}
+.title {
+  color: #E4C797;
+  font-family: 'Nothing You Could Do', cursive;
 }
 .btn.btn-default {
   background-color: #985656;
   color: white;
+}
+.navbar-title {
+  color: #985656 !important;
+  font-size: 28px;
+  padding-left: 0;
+  font-weight: 700;
 }
 
