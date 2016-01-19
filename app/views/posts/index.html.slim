@@ -12,7 +12,7 @@
         = post.updated_at.strftime("%D")
         span.title
           = post.title
-      = image_tag("carlson_family_photo.jpg", class: "home-image")
+      = post.image.present? ? image_tag(post.image, class: "home-image") : image_tag("carlson_family_photo.jpg", class: "home-image")
       h4
         = post.body
     br

@@ -1,14 +1,13 @@
 body {
-  background-color: #404040;
+  background-color: #F8F8F8;
   nav.navbar.navbar-default {
-    background-color: white;
     margin: 0 55px;
     border-radius: 0;
     border: none;
     ul {
       li {
         a {
-          color: #2D35BF;
+          color: #985656;
           font-size: 15px;
         }
       }
@@ -21,22 +20,16 @@ body {
 .page-header {
   font-size: 60px;
   font-weight: bold;
-  color: #2D35BF;
-  font-family: cursive;
-}
-.row {
-  background-color: white;
-  padding: 0 30px 30px;
+  color: #985656;
 }
 h4, p {
   color: #404040;
 }
 h1, .title {
-  color: #2D35BF;
-  font-family: cursive;
+  color: #985656;
 }
 .btn.btn-default {
-  background-color: #2D35BF;
+  background-color: #985656;
   color: white;
 }
 
