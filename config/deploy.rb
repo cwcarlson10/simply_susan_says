@@ -10,7 +10,7 @@ set :deploy_to, '~/www/simplysusansays.com'
 set :scm, :git
 
 set :format, :pretty
-set :linked_dirs, %w{log tmp db/sphinx vendor/bundle public/system public/uploads}
+set :linked_dirs, %w{log tmp vendor/bundle public/system public/uploads}
 set :log_level, :info
 # set :log_level, :debug
 set :pty, false
@@ -54,7 +54,6 @@ namespace :deploy do
   after :publishing, "deploy:restart"
   # after :publishing, "thinking_sphinx:stop"
   # before "thinking_sphinx:rebuild", "thinking_sphinx:stop"
-  after :finishing, "thinking_sphinx:rebuild"
   after :finishing, 'deploy:cleanup'
   before :migrate, 'deploy:create_database'
 end
