@@ -17,7 +17,6 @@ require 'capistrano/deploy'
 #   https://github.com/capistrano/rails/tree/master/migrations
 #
 require 'capistrano/rvm'
-require 'thinking_sphinx/capistrano'
 # require 'capistrano/rbenv'
 # require 'capistrano/chruby'
 require 'capistrano/bundler'
