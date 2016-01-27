@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'SimplySusanSays'
-set :repo_url, 'git@github.com/cwcarlson10:simply_susan_says'
+set :repo_url, 'git@github.com:cwcarlson10/simply_susan_says'
 
 set :branch, :master 
 
