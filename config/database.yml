@@ -49,5 +49,5 @@ test:
 production:
   <<: *default
   database: SimplySusanSays_production
-  username: SimplySusanSays
-  password: <%= ENV['SIMPLYSUSANSAYS_DATABASE_PASSWORD'] %>
+  username: root
+  password: 
