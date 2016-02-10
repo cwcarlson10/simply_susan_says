@@ -50,4 +50,4 @@ production:
   <<: *default
   database: SimplySusanSays_production
   username: root
-  password: VinScully66
+  password: cooldude10
