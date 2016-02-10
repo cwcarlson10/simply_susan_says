@@ -15,7 +15,6 @@ set :log_level, :info
 # set :log_level, :debug
 set :pty, false
 # setting queue
-set :sidekiq_queue, 'mailers'
 
 # set :linked_files, %w{config/database.yml}
 
