@@ -44,5 +44,4 @@ server domains.first, user: 'deploy', roles: %w{web app}, my_property: :my_value
 # setting per server overrides global ssh_options
 
 # fetch(:default_env).merge!(rails_env: :production)
-set :sidekiq_queue, 'mailers'
 
